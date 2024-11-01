@@ -3,7 +3,7 @@ This extension should make it easier to quickly copy the path for a STRING value
 
 ## How to use
 Select any key in your json (which has a STRING as value) and press one of the three keyboard shortcuts.
-![alt text](example.png)
+![alt text](https://data.gametimedev.de/other/translate-json-clipboard/example.png)
 
 ### For use in HTML
 Shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd><br>
