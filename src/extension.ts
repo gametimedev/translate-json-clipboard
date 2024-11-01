@@ -6,7 +6,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     let c1 = vscode.commands.registerCommand('translate-json-clipboard.html-path', () => {
         const editor = vscode.window.activeTextEditor;
-        if (editor && editor.document.fileName.endsWith('en.json')) {
+        if (editor && editor.document.fileName.endsWith('.json')) {
             const document = editor.document;
             const selection = editor.selection;
             const text = document.getText(selection);
@@ -29,7 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     let c2 = vscode.commands.registerCommand('translate-json-clipboard.ts-path', () => {
         const editor = vscode.window.activeTextEditor;
-        if (editor && editor.document.fileName.endsWith('en.json')) {
+        if (editor && editor.document.fileName.endsWith('.json')) {
             const document = editor.document;
             const selection = editor.selection;
             const text = document.getText(selection);
@@ -52,7 +52,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     let c3 = vscode.commands.registerCommand('translate-json-clipboard.key-path', () => {
         const editor = vscode.window.activeTextEditor;
-        if (editor && editor.document.fileName.endsWith('en.json')) {
+        if (editor && editor.document.fileName.endsWith('.json')) {
             const document = editor.document;
             const selection = editor.selection;
             const text = document.getText(selection);

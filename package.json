@@ -1,7 +1,12 @@
 {
   "name": "translate-json-clipboard",
   "displayName": "Translate JSON Clipboard",
-  "description": "-",
+  "description": "Copy the path of a string value from a JSON file, for Angular/Translate",
+  "author": {
+        "name": "GameTimeDev",
+        "email": "developer.gametime@gmail.com",
+        "url": "https://gametimedev.de/S4MM"
+    },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.95.0"
