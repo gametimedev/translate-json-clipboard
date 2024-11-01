@@ -1,0 +1,64 @@
+{
+  "name": "translate-json-clipboard",
+  "displayName": "Translate JSON Clipboard",
+  "description": "-",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+        {
+            "command": "translate-json-clipboard.html-path",
+            "title": "Copy JSON Path for HTML into the clipboard"
+        },
+        {
+          "command": "translate-json-clipboard.ts-path",
+          "title": "Copy JSON Path for TS into the clipboard"
+      },{
+        "command": "translate-json-clipboard.key-path",
+        "title": "Copy JSON Path into the clipboard"
+    }
+    ],
+    "keybindings": [
+        {
+            "command": "translate-json-clipboard.html-path",
+            "key": "ctrl+shift+c",
+            "when": "editorTextFocus"
+        },
+        {
+          "command": "translate-json-clipboard.ts-path",
+          "key": "ctrl+shift+x",
+          "when": "editorTextFocus"
+      },{
+        "command": "translate-json-clipboard.key-path",
+        "key": "ctrl+shift+y",
+        "when": "editorTextFocus"
+    }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
