@@ -13,8 +13,8 @@ Example: {{'**EXAMPLE.OTHER.TEST**' | translate}}
 
 ### For use in TS
 Shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd><br>
-Format: this.translate.instance('**PATH**')<br>
-Format: this.translate.instance('**EXAMPLE.OTHER.TEST**')
+Format: this.translate.instant('**PATH**')<br>
+Format: this.translate.instant('**EXAMPLE.OTHER.TEST**')
 
 ### Only the path
 Shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd><br>

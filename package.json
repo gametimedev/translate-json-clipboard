@@ -12,6 +12,11 @@
   "engines": {
     "vscode": "^1.95.0"
   },
+  "license": "MIT" ,
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/gametimedev/translate-json-clipboard.git"
+},
   "categories": [
     "Other"
   ],

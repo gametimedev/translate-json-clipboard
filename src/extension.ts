@@ -40,7 +40,7 @@ export function activate(context: vscode.ExtensionContext) {
                 vscode.window.showErrorMessage("Unable to find key path!");
                 return;
             }
-            const clipboardText = `this.translate.instance('${items[0].path}')`;
+            const clipboardText = `this.translate.instant('${items[0].path}')`;
             vscode.env.clipboard.writeText(clipboardText);
             if(items.length>1){
                 vscode.window.showInformationMessage("Found multible key paths! Copied the first.")
