@@ -34,7 +34,10 @@
       },{
         "command": "translate-json-clipboard.key-path",
         "title": "Copy JSON Path into the clipboard"
-    }
+    },{
+      "command": "translate-json-clipboard.file-replace",
+      "title": "Replace the selected string with a matching translate string if possible"
+  }
     ],
     "keybindings": [
         {
@@ -50,8 +53,27 @@
         "command": "translate-json-clipboard.key-path",
         "key": "ctrl+shift+y",
         "when": "editorTextFocus"
+    },{
+      "command": "translate-json-clipboard.file-replace",
+      "key": "ctrl+shift+a",
+      "when": "editorTextFocus"
+  }
+    ],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "translatejsonclipboard.mainTranslateFile": {
+          "type": "string",
+          "default": "",
+          "description": "Path to main translation file (en.json)"
+        },
+        "translatejsonclipboard.mainTranslateFileName": {
+          "type": "string",
+          "default": "en.json",
+          "description": "Name of the translation file"
+        }
+      }
     }
-    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
